@@ -8,7 +8,7 @@
         <title>Arun Saravanan - Front-end developer</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
-        <script src="js/all.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
@@ -321,5 +321,28 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         <script src="js/simple-lightbox.min.js"></script>
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.1/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.0.1/firebase-analytics.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+              apiKey: "AIzaSyBZaIc3XXYJKAOVSN_Bxz-a8BurIWjUcUM",
+              authDomain: "arunsaravanan-ui-portfolio.firebaseapp.com",
+              projectId: "arunsaravanan-ui-portfolio",
+              storageBucket: "arunsaravanan-ui-portfolio.appspot.com",
+              messagingSenderId: "439053774201",
+              appId: "1:439053774201:web:ff32fbf8740cb3e8ee53a8",
+              measurementId: "G-ZNQ6439P7K"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+          </script>
     </body>
 </html>
